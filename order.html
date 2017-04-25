@@ -5,17 +5,18 @@
     <title>
       Order Mr. Rivers Delivers!
     </title>
-    <link rel="stylesheet" href="/css/materialize.css">
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/materialize.css">
+    <script src="js/materialize.js" charset="utf-8"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
   <body>
@@ -25,7 +26,7 @@
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo left">Mr. Rivers Delivers</a>
           <ul class="right hide-on-med-and-down">
-          <li><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
+          <li class="active"><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
           </ul>
         </div>
       </nav>
@@ -39,6 +40,85 @@
 
     <div class="main">
       <main>
+        <div class="row">
+
+          <div class="col s12 m10 offset-m1 nagi">
+            <p class="flow-text nagi-text center">We are honored to be the only ones entrusted to deliver Nagi Ramen hot & fresh to you!</p>
+          </div>
+
+          <div class="col s6 m6 l6 push-s6 push-m6 push-l6">
+            <p>Order Form</p>
+          </div>
+
+          <div class="col s6 m3 l3 pull-s6 pull-m9 pull-l9">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/buta-o.jpg">
+              </div>
+              <div class="card-content">
+                <a class="butao btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+                <span class="card-title activator grey-text text-darken-4">Original King Ramen<i class="material-icons left">swap_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">(BUTA-O)<i class="material-icons left">close</i></span>
+                <a class="butao btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
+                <p>Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic, special handmade noodles and classic Nagi pork chashu.</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col s6 m6 l6 pull-s6 pull-m6 pull-l6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/kuro-o2.jpeg">
+            </div>
+            <div class="card-content">
+              <a class="kuroo btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></a>
+              <span class="card-title activator grey-text text-darken-4">Black King Ramen<i class="material-icons left">swap_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">(KURO-O)<i class="material-icons left">close</i></span>
+              <a class="kuroo btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></a>
+              <p>With a tonkotsu broth with squid ink that’s black and incredibly dangerous, Ramen Nagi’s Black King is not for the faint of heart.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m3">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/aka-o2.jpg">
+            </div>
+            <div class="card-content">
+              <a class="akao btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <span class="card-title activator grey-text text-darken-4">Red King Ramen<i class="material-icons left">swap_vert</i></span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">(AKA-O)<i class="material-icons left">close</i></span>
+              <a class="akao btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              <p>A striking blend of garlic, chili oil and cayenne pepper in a velvety broth topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col s6 m3">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/midori-o.jpg">
+          </div>
+          <div class="card-content">
+            <a class="midorio btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+            <span class="card-title activator grey-text text-darken-4">Green King Ramen<i class="material-icons left">swap_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">(MIDORI-O)<i class="material-icons left">close</i></span>
+            <a class="midorio btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+            <p>A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbled chashu.</p>
+          </div>
+        </div>
+    </div>
+
+      </div>
 
       </main>
     </div>
@@ -55,8 +135,8 @@
           </div>
           <div class="col l4 offset-l2 s12">
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Mr. Rivers Delivers</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Order Mr. Rivers Delivers Now</a></li>
+              <li><a class="grey-text text-lighten-3" href="index.html">Mr. Rivers Delivers</a></li>
+              <li><a class="grey-text text-lighten-3 active" href="order.html">Order Mr. Rivers Delivers Now</a></li>
             </ul>
           </div>
         </div>

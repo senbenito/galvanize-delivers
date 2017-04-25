@@ -14,6 +14,15 @@
    flex: 1 0 auto;
  }
 
+.nagi{
+  background-image: url(nagi.png);
+}
+
+.nagi-text{
+  background-color: rgba(239, 83, 80, 0.3);
+  color: white;
+}
+
 #imageHeader{
   background-image: url(kuroObi.png);
 }
@@ -21,7 +30,7 @@
 #textHeader{
   background-color: rgba(255, 255, 255, 0.3);
   color: #ef5350;
-  
+
 }
 
 .materialize-red {
@@ -4561,6 +4570,7 @@ small {
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px;
+  height: 60%;
 }
 
 .card .card-title {
@@ -4578,6 +4588,7 @@ small {
 
 .card.small .card-image, .card.medium .card-image, .card.large .card-image {
   max-height: 60%;
+  min-height: 60%
   overflow: hidden;
 }
 
