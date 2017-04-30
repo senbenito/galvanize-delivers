@@ -8,6 +8,11 @@ main {
   flex: 1 0 auto;
 }
 
+h4 {
+  text-align: center;
+  color: #ee6e73;
+}
+
 .nagi{
  background-image: url(nagi.png);
 }
@@ -15,6 +20,18 @@ main {
 .nagi-text{
  background-color: rgba(239, 83, 80, 0.3);
  color: white;
+}
+
+.card{
+  height: 333px;
+}
+
+.card-image{
+  height: 60%;
+}
+
+.card-title{
+  font-size:
 }
 
 #imageHeader{

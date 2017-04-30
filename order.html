@@ -2,17 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>
       Order Mr. Rivers Delivers!
     </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="js/materialize.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
+
 
   </head>
   <body>
@@ -21,8 +24,13 @@
       <nav>
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo left">Mr. Rivers Delivers</a>
+          <a href="#" data-activates="hamburger-menu" class="button-collapse right"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
           <li class="active"><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
+          </ul>
+          <ul class="side-nav right" id="hamburger-menu">
+            <li><a href="index.html">Mr. Rivers Delivers</a></li>
+            <li><a href="order.html" class="active">Order Mr. Rivers Delivers Now</a></li>
           </ul>
         </div>
       </nav>
@@ -42,70 +50,117 @@
             <p class="flow-text nagi-text center">We are honored to be the only ones entrusted to deliver Nagi Ramen hot & fresh to you!</p>
           </div><!-- closes banner column -->
 
-          <div class="col s6 m6"><!-- card column -->
-            <div class="card col s12 m6">
+          <div class="col s12 m6"><!-- card column -->
+            <h4>How will you get your slurp on?</h4>
+            <!--Butao Card-->
+            <div class="card col s12 l5 offset-l1">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/buta-o.jpg">
-              </div>
+              </div><!-- closes card-image -->
+
               <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Original King Ramen<br><i class="material-icons left">swap_vert</i></span>
                 <a class="butao btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
-                <span class="card-title activator grey-text text-darken-4">Original King Ramen<i class="material-icons left">swap_vert</i></span>
-              </div>
+              </div><!-- closes card content -->
+
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">(BUTA-O)<i class="material-icons left">close</i></span>
                 <a class="butao btn-floating halfway-fab waves-effect waves-light orange"><i class="material-icons">add</i></a>
                 <p>Award-winning tonkotsu pork-broth prepared in the traditional method. Mouth-wateringly rich, fresh and aromatic, special handmade noodles and classic Nagi pork chashu.</p>
-                </div>
+              </div><!-- closes card reveal -->
             </div><!-- closes card -->
 
-            <div class="card col s12 m6">
+            <!--Kuroo Card-->
+            <div class="card col s12 l5 offset-l1">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/kuro-o2.jpeg">
-              </div>
+              </div><!-- closes card image-->
+
               <div class="card-content">
                 <a class="kuroo btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></a>
-                <span class="card-title activator grey-text text-darken-4">Black King Ramen<i class="material-icons left">swap_vert</i></span>
-              </div>
+                <span class="card-title activator grey-text text-darken-4">Black King Ramen<br><i class="material-icons left">swap_vert</i></span>
+              </div><!-- closes card content-->
+
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">(KURO-O)<i class="material-icons left">close</i></span>
                 <a class="kuroo btn-floating halfway-fab waves-effect waves-light black"><i class="material-icons">add</i></a>
                 <p>With a tonkotsu broth with squid ink that’s black and incredibly dangerous, Ramen Nagi’s Black King is not for the faint of heart.</p>
-              </div>
+              </div><!-- closes card reveal-->
             </div><!-- closes card -->
 
-            <div class="card col s12 m6">
+            <!--Akao Card-->
+            <div class="card col s12 l5 offset-l1">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/aka-o2.jpg">
-              </div>
+              </div><!-- closes card image-->
+
               <div class="card-content">
                 <a class="akao btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                <span class="card-title activator grey-text text-darken-4">Red King Ramen<i class="material-icons left">swap_vert</i></span>
-              </div>
+                <span class="card-title activator grey-text text-darken-4">Red King Ramen<br><i class="material-icons left">swap_vert</i></span>
+              </div><!-- closes card content-->
+
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">(AKA-O)<i class="material-icons left">close</i></span>
                 <a class="akao btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                 <p>A striking blend of garlic, chili oil and cayenne pepper in a velvety broth topped by a tempting ball of miso-infused minced pork and special Nagi spices with tender chashu.</p>
-              </div>
+              </div><!-- closes card reveal-->
             </div><!-- closes card -->
 
-            <div class="card col s12 m6">
+            <!--Midorio Card-->
+            <div class="card col s12 l5 offset-l1">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="img/midori-o.jpg">
-              </div>
+              </div><!-- closes card image-->
+
               <div class="card-content">
                 <a class="midorio btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
-                <span class="card-title activator grey-text text-darken-4">Green King Ramen<i class="material-icons left">swap_vert</i></span>
-              </div>
+                <span class="card-title activator grey-text text-darken-4">Green King Ramen<br><i class="material-icons left">swap_vert</i></span>
+              </div><!-- closes card content-->
+
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">(MIDORI-O)<i class="material-icons left">close</i></span>
                 <a class="midorio btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
                 <p>A fusion of fresh basil and olive oil with delectable tonkotsu broth in a truly unique combination; lavishly garnished with grated parmesan cheese and richly marbled chashu.</p>
-              </div>
+              </div><!-- closes card reveal-->
             </div><!-- closes card -->
+
           </div><!-- closes card column -->
 
-        <div class="col s6 m6"><!-- order form column -->
-          <p>Order Form</p>
+        <div class="col s12 m6"><!-- order form column -->
+          <div class="row">
+
+          </div>
+          <h4>Mr. Rivers will deliver to lucky you:</h4>
+
+
+
+
+          <h4>Where should Mr. Rivers deliver?</h4>
+          <div class="col s12 m10 offset-m1"
+            <form action="order.html" method="get">
+              <ul>
+                <li><label for="deliveryName"></label>
+                <input id="deliveryName" type="text" placeholder="your name"></li>
+
+                <li><label for="deliveryStreet1"></label>
+                <input id="deliveryStreet1" type="text" placeholder="street address 1"></li>
+
+                <li><label for="deliveryStreet2"></label>
+                <input id="deliveryStreet2" type="text" placeholder="street address 2 (floor, apt, company)"></li>
+
+                <li>
+                  <label for="deliveryCity"></label>
+                  <input id="deliveryCity" type="text" placeholder="city">
+                  <label for="deliveryState"></label>
+                  <input id="deliveryState" type="dropdown-button" selected="CO">
+                  <label for="deliveryZIP"></label>
+                  <input id="deliveryZIP" type="text" placeholder="ZIP">
+                </li>
+
+                <button class="btn waves-effect waves-light" type="submit" id="submitBtn">Click to Submit Your Order<i class="material-icons right">send</i></button>
+              </ul>
+            </form>
+      </div>
         </div><!-- closes order form -->
 
       </div><!-- closes row -->
@@ -113,6 +168,7 @@
   </div><!-- closes main div -->
 
     <footer class="page-footer">
+
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -121,21 +177,21 @@
             <br>you can order in a carriage, horse-drawn!
             <br>You can order soaking in the tub;
             <br>let Mr. Rivers deliver your grub!</p>
-          </div>
+          </div><!-- closes left footer logo -->
           <div class="col l4 offset-l2 s12">
             <ul>
               <li><a class="grey-text text-lighten-3" href="index.html">Mr. Rivers Delivers</a></li>
               <li><a class="grey-text text-lighten-3 active" href="order.html">Order Mr. Rivers Delivers Now</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </div> <!-- closes right footer list div -->
+        </div><!-- closes footer row -->
+      </div><!-- closes footer container-->
+
       <div class="footer-copyright">
         <div class="container">
         © 2017 if you need to steal, go ahead
-        <a class="grey-text text-lighten-4 right" href="#!">Our friends deliver great food, too!</a>
         </div>
-      </div>
+      </div><!-- closes footer-copyright -->
     </footer>
 
 

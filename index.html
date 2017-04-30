@@ -2,27 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>
       Mr. Rivers Delivers!
     </title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="js/materialize.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
 
   </head>
-  
+
   <body>
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo left active">Mr. Rivers Delivers</a>
+          <a href="index.html" class="brand-logo left">Mr. Rivers Delivers</a>
+          <a href="#" data-activates="hamburger-menu" class="button-collapse right"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-          <li><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
+          <li class=""><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
+          </ul>
+          <ul class="side-nav right" id="hamburger-menu">
+            <li><a href="index.html" class="active">Mr. Rivers Delivers</a></li>
+            <li><a href="order.html">Order Mr. Rivers Delivers Now</a></li>
           </ul>
         </div>
       </nav>
@@ -81,9 +88,8 @@
       <div class="footer-copyright">
         <div class="container">
         © 2017 if you need to steal, go ahead
-        <a class="grey-text text-lighten-4 right" href="#!">Our friends deliver great food, too!</a>
         </div>
-      </div>
+      </div><!-- closes footer-copyright -->
     </footer>
 
   </body>
