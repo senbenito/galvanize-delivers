@@ -26,10 +26,6 @@ h4 {
   height: 333px;
 }
 
-.price{
-  font-size: medium;
-  color: #ee6e73;
-}
 
 .card-image{
   height: 60%;
@@ -39,6 +35,15 @@ h4 {
   z-index: 1000;
 }
 
+.price{
+  font-size: medium;
+  color: #ee6e73;
+}
+
+.col.s3.centered{
+  text-indent: 1em;
+}
+
 #imageHeader{
  background-image: url(kuroObi.png);
 }
@@ -46,5 +51,13 @@ h4 {
 #textHeader{
  background-color: rgba(255, 255, 255, 0.3);
  color: #ef5350;
+}
 
+#footer{
+  font-size: medium;
+  color: #ee6e73;
+}
+
+#footer.col.s3{
+  text-align: center;
 }
