@@ -58,6 +58,7 @@ h4 {
   color: #ee6e73;
 }
 
-#footer.col.s3{
+#footer.col.s4.offset-s2{
+  text-indent: 2em;
   text-align: center;
 }

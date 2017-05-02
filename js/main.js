@@ -8,8 +8,8 @@ $(document).ready(function(){
     });
 
 
-  var totalQty = 0;
-  var subtotal = 0;
+  var $totalQty = 0;
+  var $subtotal = 0;
   $(".ramens").click(function (event){
     $("#footer").show();
     var ramenType = ((event.target).className).slice(15);
@@ -25,11 +25,11 @@ $(document).ready(function(){
           ramenDetail.appendTo(orderRow);
           qtyDetail.attr("class", "col s3 centered");
           qtyDetail.text("ichi (1)");
-          totalQty += 1;
+          $totalQty += 1;
           qtyDetail.appendTo(orderRow);
           priceDetail.attr("class", "col s3");
           priceDetail.text("$12.99");
-          subtotal += 12.99;
+          $subtotal += 12.99;
           priceDetail.appendTo(orderRow);
           orderRow.appendTo($("tbody"));
           break;
@@ -41,11 +41,11 @@ $(document).ready(function(){
           ramenDetail.appendTo(orderRow);
           qtyDetail.attr("class", "col s3 centered");
           qtyDetail.text("ichi (1)");
-          totalQty += 1;
+          $totalQty += 1;
           qtyDetail.appendTo(orderRow);
           priceDetail.attr("class", "col s3");
           priceDetail.text("$13.99");
-          subtotal += 13.99;
+          $subtotal += 13.99;
           priceDetail.appendTo(orderRow);
           orderRow.appendTo($("tbody"));
           break;
@@ -57,11 +57,11 @@ $(document).ready(function(){
           ramenDetail.appendTo(orderRow);
           qtyDetail.attr("class", "col s3 centered");
           qtyDetail.text("ichi (1)");
-          totalQty += 1;
+          $totalQty += 1;
           qtyDetail.appendTo(orderRow);
           priceDetail.attr("class", "col s3");
           priceDetail.text("$13.99");
-          subtotal += 13.99;
+          $subtotal += 13.99;
           priceDetail.appendTo(orderRow);
           orderRow.appendTo($("tbody"));
           break;
@@ -73,19 +73,25 @@ $(document).ready(function(){
           ramenDetail.appendTo(orderRow);
           qtyDetail.attr("class", "col s3 centered");
           qtyDetail.text("ichi (1)");
-          totalQty += 1;
+          $totalQty += 1;
           qtyDetail.appendTo(orderRow);
           priceDetail.attr("class", "col s3");
           priceDetail.text("$12.99");
-          subtotal += 12.99;
+          $subtotal += 12.99;
           priceDetail.appendTo(orderRow);
           orderRow.appendTo($("tbody"));
           break;
       }//closes ramen switch
-      console.log(totalQty);
-      console.log(subtotal);
-      $("#totalQty").text += totalQty;
-      $("subtotal").text += subtotal;
+      var $footerQty = `Total Quantity: ${$totalQty}`;
+      var $footerSub = `Subtotal: $${Math.round(($subtotal + 0.00001) * 100) / 100}`;
+      var $footerTax = `Yup, tax: $${Math.round((($subtotal * 0.0825) + 0.00001) * 100) / 100}`;
+      var $footerTotal = `Total-total: $${Math.round((($subtotal * 1.0825) + 0.00001) * 100) / 100}`;
+
+      $("#totalQty").text($footerQty);
+      $("#subtotal").text($footerSub);
+      $("#footerTax").text($footerTax);
+      $("#footerTotal").text($footerTotal);
+
     });//closes ramens.click function
 
 
