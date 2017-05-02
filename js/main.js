@@ -1,12 +1,14 @@
 $(document).ready(function(){
   console.log('Ready to Rock!');
   $("#footer").hide();
+  $('select').material_select();
+  $('.fixed-action-btn').openFAB();
+  $('.fixed-action-btn').closeFAB();
   $(".button-collapse").sideNav({
     menuWidth: 300,
     edge: 'right',
     closeOnClick: true,
     });
-
 
   var $totalQty = 0;
   var $subtotal = 0;
@@ -92,15 +94,17 @@ $(document).ready(function(){
       $("#footerTotal").text($footerTotal);
     });//closes ramens.click function
 
-
-
   $("#submitBtn").click(function (event){
     event.preventDefault();
-    });
+    if ($totalQty !== 0 && $("input").hasClass("valid")===true){
+      console.log("order success");
+      Materialize.toast('Ramen is on the way!', 3000, 'rounded');
+    } else {
+      console.log("order FAIL");
+      Materialize.toast(`Something isn't complete...`, 3000, 'materialize-red')
+      }
+});
 
-  $('select').material_select();
-  $('.fixed-action-btn').openFAB();
-  $('.fixed-action-btn').closeFAB();
 
 
 
