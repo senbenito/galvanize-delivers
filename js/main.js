@@ -86,12 +86,10 @@ $(document).ready(function(){
       var $footerSub = `Subtotal: $${Math.round(($subtotal + 0.00001) * 100) / 100}`;
       var $footerTax = `Yup, tax: $${Math.round((($subtotal * 0.0825) + 0.00001) * 100) / 100}`;
       var $footerTotal = `Total-total: $${Math.round((($subtotal * 1.0825) + 0.00001) * 100) / 100}`;
-
       $("#totalQty").text($footerQty);
       $("#subtotal").text($footerSub);
       $("#footerTax").text($footerTax);
       $("#footerTotal").text($footerTotal);
-
     });//closes ramens.click function
 
 
