@@ -26,12 +26,17 @@ h4 {
   height: 333px;
 }
 
+.price{
+  font-size: medium;
+  color: #ee6e73;
+}
+
 .card-image{
   height: 60%;
 }
 
-.card-title{
-  font-size:
+.halfway-fab{
+  z-index: 1000;
 }
 
 #imageHeader{
